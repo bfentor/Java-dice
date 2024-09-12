@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=dieImplementation
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=list\ num
+comment2.target=java.util.ArrayList\ mkList(java.util.ArrayList,\ int)
+comment3.params=num\ dice\ list
+comment3.target=void\ draw(int,\ java.lang.String[][],\ java.util.ArrayList)
+numComments=4
