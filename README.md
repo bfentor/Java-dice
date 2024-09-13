@@ -11,3 +11,4 @@ This will display one randomized die.
 Multiple dice can be displayed at once with an integer argument immedietly following the `dice` command.
 
 ## Example
+<img src="example.jpg" width="300" />
