@@ -9,3 +9,6 @@ Launch the program with `dice` if you have the `dice` script in your path and ha
 This will display one randomized die. 
 
 Multiple dice can be displayed at once with an integer argument immedietly following the `dice` command.
+
+## Example
+![image](https://github.com/user-attachments/assets/e0ae6c27-91a8-4415-99f9-9520621a9934)
