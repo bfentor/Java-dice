@@ -6,7 +6,6 @@
  * Refactor to make the die arrays look nicer
  */
 import java.util.Random;
-import java.util.ArrayList;
 
 public class dice {
     public static void main(String[] args) {
@@ -15,8 +14,8 @@ public class dice {
         if (args.length != 0)
             num = Integer.parseInt(args[0]);
             
-        // ArrayList of random numbers to be kept track of
-        ArrayList<Integer> randList = new ArrayList<>();
+	// List of generated random numbers
+	int[] randList = new int[num];
 
         String[] one = new String[5];
         one[0] = "+-------+";
@@ -64,16 +63,16 @@ public class dice {
         
         draw(num, dice, mkList(randList, num));
     }
-    public static ArrayList<Integer> mkList(ArrayList<Integer> list, int num) {
+    public static int[] mkList(int[] list, int num) {
         for (int i = 0; i < num; i++) {
-            list.add((int)(Math.random()*6));
+            list[i] = ((int)(Math.random()*6));
         }
         return list;
     }
-    public static void draw(int num, String[][] dice, ArrayList<Integer> list) {
+    public static void draw(int num, String[][] dice, int[] list) {
         for (int i = 0; i < 5; i++) {
             for (int k = 0; k < num; k++) {
-                System.out.print(dice[list.get(k)][i] + "  ");
+                System.out.print(dice[list[k]][i] + "  ");
             }
             System.out.println();
         }
